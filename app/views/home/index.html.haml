@@ -1,0 +1,22 @@
+%div{style: "text-align:center"}
+  %form.navbar-form
+    .form-group
+    = image_tag("laniSmallLogo.png", size: "70x50", style: "display:inline;padding-right:10px")
+
+
+    / Small button group
+    .btn-group
+      %button.btn.btn-info.dropdown-toggle{"data-toggle" => "dropdown", type: "button"}
+        %span.glyphicon.glyphicon-search
+        %span.caret
+      %ul.dropdown-menu
+        %input.form-control{placeholder: "Search", type: "text", style: "max-width:100px;margin:10px auto"}
+        %button.btn.btn-default{type: "submit"}   
+          %span.glyphicon.glyphicon-search
+      
+    %button.btn.btn-warning{type: "submit"}
+      %span.glyphicon.glyphicon-home
+    %button.btn.btn-danger{type: "submit"}
+      %span.glyphicon.glyphicon-user
+    
+  
